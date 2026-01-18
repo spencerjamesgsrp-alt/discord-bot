@@ -5,8 +5,8 @@ const router = express.Router();
 
 // Passport Discord Strategy
 passport.use(new DiscordStrategy({
-  clientID: process.env.DISCORD_CLIENT_ID,
-  clientSecret: process.env.DISCORD_CLIENT_SECRET,
+  clientID: process.env.1462383337325858838,
+  clientSecret: process.env._wfMKcn1q8tpRy2UBX_QgLoIU_L9Lu7f,
   callbackURL: 'http://localhost:3000/auth/discord/callback',
   scope: ['identify', 'email', 'guilds']
 }, (accessToken, refreshToken, profile, done) => {
@@ -39,3 +39,4 @@ router.get('/logout', (req, res) => {
 });
 
 module.exports = router;
+
